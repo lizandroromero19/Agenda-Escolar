@@ -104,7 +104,7 @@
       + Sistema informa que la hora ya ha sido ocupada.
 
       + Sistema muestra las opciones, reemplazar materia y modificar el registro.
-
+  
         3a Estudiante reemplaza la materia.
         #pad(left: 1.5em)[
           + Sistema borra la información de la antigua materia.
