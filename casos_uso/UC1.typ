@@ -23,6 +23,8 @@
 
   [*Nombre del caso de uso*], [UC1: Administrar horario escolar],
 
+  [*Version*], [1.1],
+
   [*Alcance*],
   [
     Aplicación universitaria de gestión
@@ -47,8 +49,10 @@
   [
     + Estudiante universitario abre la aplicación.
     + Estudiante abre el apartado de gestion de horario escolar.
+    + El sistema muestra el horario semanal actual.
     + Estudiante abre el apartado de agregar materia.
     + Estudiante ingresa (hora, profesor asignado, nombre de la materia, salón, etc.).
+    + Estudiante selecciona un color para identificar la materia.
     + Sistema guarda la información.
     + Sistema muestra la información actualizada en el apartado de visualización de horario.
   ],
@@ -79,7 +83,15 @@
       + Sistema guarda los cambios realizados y actualiza el horario.
     ]
 
-    2b. Estudiante selecciona una materia del horario.
+    2b. Estudiante elimina todas las materias registradas
+    #pad(left: 1.5em)[
+      + Sistema pide confirmacion para borrar el horario completamente.
+      + Estudiante confirma.
+      + Sistema borra toda la informacion de las materias registradas.
+      + Sistema actualiza el horario.
+    ]
+
+    3a. Estudiante selecciona una materia del horario.
     #pad(left: 1.5em)[
       + Sistema muestra la informacion de la materia.
       + Estudiante modifica la informacion.
@@ -90,15 +102,7 @@
       + Sistema actualiza el horario.
     ]
 
-    2c. Estudiante elimina todas las materias registradas
-    #pad(left: 1.5em)[
-      + Sistema pide confirmacion para borrar el horario completamente.
-      + Estudiante confirma.
-      + Sistema borra toda la informacion de las materias registradas.
-      + Sistema actualiza el horario.
-    ]
-
-    4a. Estudiante agrega una hora invalida para una materia.
+    5a. Estudiante agrega una hora invalida para una materia.
     // Tercera tabulacion
     #pad(left: 1.5em)[
       + Sistema informa que la hora ya ha sido ocupada.
@@ -124,6 +128,13 @@
       + Sistema informa que no se puede agregar la materia sin especificar horario.
       + Estudiante llena la información obligatoria.
       + El sistema guarda la información y actualiza el horario.
+    ]
+
+    6a. Estudiante no selecciona ningun color para identificar la materia.
+    #pad(left: 1.5em)[
+      + Sistema escoge un color aleatorio y se lo asigna a la materia.
+      + Sistema guarda la informacion.
+      + Sistema actualiza el horario escolar.
     ]
 
   ]],

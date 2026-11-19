@@ -18,6 +18,7 @@
 #table(
   columns: (1fr, 2fr),
   stroke: 0.5pt,
+
   [*Proyecto*], [Nombre del proyecto],
   [*Responsable*], [Nombre del responsable],
 )
@@ -27,12 +28,11 @@
 == 2. Registro de modificaciones
 
 #table(
-  columns: (0.8fr, 1fr, 1fr, 1.2fr),
+  columns: (0.8fr, 1fr, 1fr),
   stroke: 0.5pt,
   align: center,
-  [*ID*], [*Versión anterior*],
-  [*Nueva versión*], [*Fecha*],
-  [RC-01], [1.0], [1.1], [DD/MM/AAAA],
+  [*ID*], [*Versión anterior*], [*Nueva versión*],
+  [RC-01], [1.0], [1.1],
 )
 
 #v(0.8em)
@@ -58,7 +58,6 @@
   stroke: 0.5pt,
   [*Campo*], [*Descripción*],
   [Impacto en el proyecto], [Describir las consecuencias en desarrollo, tiempo y recursos.],
-  [Estado], [Pendiente / Aprobado / Rechazado],
-  [Fecha de aprobación], [DD/MM/AAAA],
+  [Estado], [Pendiente / Aprobado / Rechazado]
 )
 
