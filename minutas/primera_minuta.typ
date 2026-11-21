@@ -21,7 +21,7 @@
   // ---- Fecha y horario ----
   table.cell(colspan: 2)[
     #text(weight: "bold")[Fecha:]
-    3 de octubre del 2026
+    3 de noviembre de 2026
   ],
 
   table.cell(colspan: 2)[
@@ -36,7 +36,7 @@
 
   table.cell(colspan: 2)[
     #text(weight: "bold")[Lugar / Modalidad:]
-    Siglo XX1 de forma física
+    Siglo XXI de forma física
   ],
 
   // ---- Asistentes | Objetivos ----
@@ -45,9 +45,9 @@
 
     Lizandro Romero (Analista del sistema)
 
-    Andre Sanchez (Estudiante universitario)
+    Andre Sánchez (Estudiante universitario)
 
-    Danna Martinez (Estudiante universitaria)
+    Danna Martínez (Estudiante universitaria)
 
     #v(2em)
   ],

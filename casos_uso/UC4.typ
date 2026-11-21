@@ -24,6 +24,8 @@
     UC4: Registro de lectura
   ],
 
+  [*Version*], [1.1],
+
   [*Scope*],
   [
     Aplicación universitaria de gestión
@@ -58,40 +60,27 @@
   [
     + Estudiante abre la aplicacion.
     + Estudiante selecciona el apartado de administracion de lecturas.
-    + Estudiante registra un libro que esta leyendo.
-    + Sistema solicita la información del libro que se desea registrar.
-    + Sistema registra el libro en la biblioteca personal del estudiante.
-    + Sistema establece el estado del libro como "En lectura".
-    + Sistema actualiza el apartado de administración de lecturas y muestra el libro registrado.
+    + Sistema muestra las lecturas registradas.
+    + Estudiante registra un libro.
+    + Sistema solicita la información del libro.
+    + Sistema registra el libro en la biblioteca personal.
+    + Sistema establece el estado del libro.
+    + Sistema actualiza la biblioteca y muestra el libro registrado.
 
   ],
 
   [*Extensions*],
   [
-    2a. Estudiante desea registrar un libro que todavía no comienza.
-    #pad(left: 1.5em)[
-      + Sistema registra el libro en la biblioteca personal del estudiante.
-      + Sistema establece el estado del libro como "Pendiente".
-      + Sistema actualiza el apartado de administración de lecturas.
-    ]
-
-    2b. Estudiante desea registrar un libro que ya terminó de leer.
-    #pad(left: 1.5em)[
-      + Sistema registra el libro en la biblioteca personal del estudiante.
-      + Sistema establece el estado del libro como "Completado".
-      + Sistema actualiza el apartado de administración de lecturas.
-    ]
-
-    2c. Estudiante desea modificar el estado de un libro.
+    3a. Estudiante modifica el estado de un libro.
     #pad(left: 1.5em)[
       + Estudiante selecciona un libro de su biblioteca personal.
       + Sistema muestra los detalles del libro seleccionado.
       + Estudiante modifica el estado del libro a "Pendiente", "En lectura" o "Completado".
       + Sistema actualiza el estado del libro.
-      + Sistema actualiza el apartado de administración de lecturas.
+      + Sistema actualiza la biblioteca y muestra la modificacion
     ]
 
-    2d. Estudiante desea actualizar su progreso de lectura.
+    3b. Estudiante actualiza su progreso de lectura.
     #pad(left: 1.5em)[
       + Estudiante selecciona un libro que se encuentra "En lectura".
       + Sistema muestra el progreso actual del libro.
@@ -99,16 +88,16 @@
       + Sistema actualiza el progreso de lectura del libro.
     ]
 
-    2e. Estudiante termina de leer un libro.
+    3c. Estudiante termina de leer un libro.
     #pad(left: 1.5em)[
       + Estudiante selecciona un libro que se encuentra "En lectura".
       + Estudiante cambia su estado a "Completado".
       + Sistema actualiza el estado del libro.
       + Sistema registra la fecha en que se completó la lectura.
-      + Sistema actualiza el apartado de administración de lecturas.
+      + Sistema actualiza la biblioteca.
     ]
 
-    2f. Estudiante desea eliminar un libro de su biblioteca personal.
+    3d. Estudiante elimina un libro de su biblioteca personal.
     #pad(left: 1.5em)[
       + Estudiante selecciona un libro registrado.
       + Sistema solicita la confirmación de eliminación.
@@ -117,14 +106,19 @@
       + Sistema actualiza el apartado de administración de lecturas.
     ]
 
-    4a. Estudiante cancela el registro de un libro.
+    3e. Estudiante filtra su biblioteca personal por estado, título o autor.
+    #pad(left: 1.5em)[
+      + Sistema muestra los libros correspondientes al filto solicitado.
+    ]
+
+    6a. Estudiante cancela el registro de un libro.
     #pad(left: 1.5em)[
       + Estudiante cancela el registro antes de confirmarlo.
       + Sistema descarta la operación.
       + Sistema regresa al apartado de administración de lecturas.
     ]
 
-    5a. Estudiante registra un libro sin su nombre.
+    6b. Estudiante registra un libro sin su nombre.
     #pad(left: 1.5em)[
       + Sistema informa al estudiante sobre los datos necesarios para el registro.
       + Estudiante corrige la información.
@@ -137,8 +131,7 @@
     Ninguna.
   ],
 
-  [*Frequency of Occurrence*],
-  [Media. Util para materas que hagan uso de lecturas],
+  [*Frequency of Occurrence*], [Media. Util para materas que hagan uso de lecturas],
 
   [*Miscellaneous*], [Ninguna],
 )
